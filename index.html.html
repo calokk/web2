@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IM-FUNDAMENTA</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom right, #0cc3db, #1467d7);
+      color: white;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+    }
+    header p {
+      margin: 10px 0 20px;
+      font-size: 1.2em;
+    }
+    .btn {
+      padding: 10px 20px;
+      background-color: white;
+      color: #1467d7;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      padding: 20px;
+    }
+    .menu button {
+      background-color: white;
+      color: #1467d7;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    section h2 {
+      border-bottom: 2px solid white;
+      padding-bottom: 10px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li::before {
+      content: "\2022 ";
+      color: #ffcc00;
+      font-weight: bold;
+      display: inline-block;
+      width: 1em;
+    }
+    iframe {
+      width: 100%;
+      max-width: 480px;
+      height: 270px;
+      margin: 10px;
+      border: none;
+    }
+    .videos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #0b5ed7;
+      color: white;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      iframe {
+        height: 200px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>IM-FUNDAMENTA</h1>
+    <p>La base académica de la ingeniería multimedia:<br>Teoría, práctica y ética en un solo lugar</p>
+    <a href="#historia" class="btn">Explorar Fundamentos</a>
+  </header>
+
+  <div class="menu">
+    <button onclick="location.href='#historia'">Historia y Evolución</button>
+    <button onclick="location.href='#fundamentos'">Fundamentos Técnicos</button>
+    <button onclick="location.href='#arquitectura'">Arquitectura</button>
+    <button onclick="location.href='#etica'">Ética</button>
+    <button onclick="location.href='#aplicaciones'">Aplicaciones</button>
+    <button onclick="location.href='#accesibilidad'">Accesibilidad</button>
+  </div>
+
+  <section id="historia">
+    <h2>Historia y Evolución</h2>
+    <ul>
+      <li>CD-ROM (1990s)</li>
+      <li>Web 1.0 (1995)</li>
+      <li>WebGL (2011)</li>
+      <li>Streaming 4K (2020)</li>
+    </ul>
+    <div class="videos">
+      <iframe src="https://www.youtube.com/embed/jl-s1X-gOxE" title="Historia y evolución de la multimedia: del CD-ROM al Streaming 4K" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/f-9LEoYYvE4" title="Evolución de WebGL y su impacto en los navegadores modernos" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="fundamentos">
+    <h2>Fundamentos Técnicos</h2>
+    <ul>
+      <li>Muestreo</li>
+      <li>DCT</li>
+      <li>MPEG</li>
+      <li>Codecs</li>
+    </ul>
+    <div class="videos">
+      <iframe src="https://www.youtube.com/embed/Q2aEzeMDHMA" title="Cómo funciona la DCT (Discrete Cosine Transform)" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/Ky4CaKw7tdo" title="Compresión MPEG explicada paso a paso" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="arquitectura">
+    <h2>Arquitectura</h2>
+    <ul>
+      <li>Cliente-servidor</li>
+      <li>CDN</li>
+      <li>Streaming adaptativo</li>
+    </ul>
+  </section>
+
+  <section id="etica">
+    <h2>Ética</h2>
+    <ul>
+      <li>Copyright</li>
+      <li>Sostenibilidad</li>
+      <li>Datos privados</li>
+    </ul>
+  </section>
+
+  <section id="aplicaciones">
+    <h2>Aplicaciones</h2>
+    <ul>
+      <li>Videojuegos</li>
+      <li>VR/AR</li>
+      <li>E-learning</li>
+      <li>Museografía</li>
+    </ul>
+    <div class="videos">
+      <iframe src="https://www.youtube.com/embed/xOJnDKBAdxg" title="Cómo funcionan los gráficos en los videojuegos" allowfullscreen></iframe>
+      <iframe src="https://www.youtube.com/embed/esUhTF9fk-w" title="Realidad virtual y aumentada explicadas" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section id="accesibilidad">
+    <h2>Accesibilidad</h2>
+    <ul>
+      <li>WCAG</li>
+      <li>Subtítulos</li>
+      <li>Audio descripción</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 | Proyecto académico de Ingeniería Multimedia | Desarrollado por Camilo Andrés Luna Ortiz</p>
+  </footer>
+</body>
+</html>
